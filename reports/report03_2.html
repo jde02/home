@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>report03_2</title>
+</head>
+<script>
+function  new_row(prev_row){
+  var pascal = [];
+  var n = 0;
+
+  for (var i = 0; i < prev_row; i++){
+    n = pascal.length - i;
+    for (var j = 0; j <= i; j++)
+      if (j === 0 || j === i)
+        pascal.push(1);
+      else
+        pascal.push(pascal[n+j-1] + pascal[n+j]);
+  }
+  document.write(pascal + "<br>");
+  }
+</script>
+<body>
+<h3>파스칼의 삼각형</h3>
+<hr>
+<script>
+    var prev_row = prompt("파스칼의 삼각형의 높이를 입력하세요");
+    new_row(prev_row);
+</script>
+</body>
+</html>
