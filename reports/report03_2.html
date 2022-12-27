@@ -17,7 +17,7 @@ function  new_row(prev_row){
       else
         pascal.push(pascal[n+j-1] + pascal[n+j]);
   }
-   document.write(pascal + "<br>");
+  return pascal;
   }
 </script>
 <body>
@@ -25,7 +25,23 @@ function  new_row(prev_row){
 <hr>
 <script>
     var prev_row = prompt("파스칼의 삼각형의 높이를 입력하세요");
-    new_row(prev_row);
+    document.write(new_row(prev_row) + " ");
 </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Da Home</title>
+</head>
+<body>
+<h2>과제</h2>
+<hr>
+<ul>
+    <li><a href="reports/report01.html">과제 1</a></li>
+    <li><a href="reports/report02.html">과제 2</a></li>
+</ul>
 </body>
 </html>
